@@ -43,3 +43,8 @@ input::placeholder{
 }
 
 
+#erreur{
+    margin-top: 15px;
+    background: rgba(236, 75, 75, 0.829);
+    width: 50%;
+}
