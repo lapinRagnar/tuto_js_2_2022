@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire! validation 2</title>
     <script src="https://kit.fontawesome.com/5a429f7869.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -20,11 +21,42 @@
 
             <div class="form-control">
                 <label for="">Username</label>
-                <input type="text">
+                <input type="text" placeholder="pseudo" id="username">
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
+                <small>Message d'erreur</small>
             </div>
 
+            <div class="form-control">
+                <label for="">Email</label>
+                <input type="email" placeholder="email@email.fr" id="email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Message d'erreur</small>
+            </div>
+
+            <div class="form-control">
+                <label for="">Email confirmation</label>
+                <input type="email" placeholder="retape ton email" id="email2">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Message d'erreur</small>
+            </div>
+
+            <div class="form-control">
+                <label for="">Mot de passe</label>
+                <input type="password" placeholder="ton mot de passe" id="mdp">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Message d'erreur</small>
+            </div>
+            <div class="form-control">
+                <label for="">Confirmer ton mot de passe</label>
+                <input type="password" placeholder="ton mot de passe encore mec!" id="mdp2">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Message d'erreur</small>
+            </div>
 
 
             <button type="submit">Valider</button>
@@ -33,6 +65,9 @@
         </form>
 
     </div>
+
+
+    <script src="./app.js"></script>
     
 </body>
 </html>
