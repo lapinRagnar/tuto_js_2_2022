@@ -1,0 +1,10 @@
+* { box-sizing: border-box;}
+
+body { 
+    background: rgb(67, 91, 122);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
