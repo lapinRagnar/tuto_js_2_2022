@@ -1,30 +1,34 @@
-document.getElementById('inscription').addEventListener('submit', (e)=>{
+console.log(document.forms['inscription']);
 
-    e.preventDefault()
+// document.getElementById('inscription').addEventListener('submit', (e)=>{
 
-    let erreur
-    // pour eviter de selectionner tous les inputs
-    inputs = document.getElementById('inscription').getElementsByTagName('input')
-    // ou
-    // inputs = this.getElementsByTagName('input')
+//     e.preventDefault()
+
+//     let erreur
+//     // pour eviter de selectionner tous les inputs
+//     inputs = document.getElementById('inscription').getElementsByTagName('input')
+//     // ou
+//     // inputs = this.getElementsByTagName('input')
     
-    console.log(inputs);
-    for (i=0; i<inputs.length; i++){
-        if (!inputs[i].value){
-            erreur = "Il faut remplir tous les chammps!"
-            console.log(erreur);
-        }
-    }
+//     console.log(inputs);
+//     for (i=0; i<inputs.length; i++){
+//         if (!inputs[i].value){
+//             erreur = "Il faut remplir tous les chammps!"
+//             console.log(erreur);
+//         }
+//     }
 
-    if (erreur){
-        e.preventDefault()
-        document.getElementById('erreur').innerHTML = erreur
+//     if (erreur){
+//         e.preventDefault()
+//         document.getElementById('erreur').innerHTML = erreur
 
-        setTimeout(() => {
-            location.reload()
-        }, 3000);
-        return false
-    }
+//         setTimeout(() => {
+//             location.reload()
+//         }, 3000);
+//         return false
+//     }
+
+    // une autre methode!
 
     // if (!pseudo.value) {
     //     erreur = "entrez un pseudo!"
@@ -46,4 +50,4 @@ document.getElementById('inscription').addEventListener('submit', (e)=>{
     // } else{
     //     alert('formulaire envoyé!')
     // }
-})
+// })
