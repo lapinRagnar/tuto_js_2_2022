@@ -55,9 +55,40 @@ header h2{
     background: rgb(157, 170, 167);
 }
 
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle {
+    visibility: visible;
+    color: #2ecc71;
+}
+
+
+.form-control.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: #e74c3c;
+    
+}
+
+.form-control.success small{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+
 .form-control i {
     position: absolute;
-    top: 40px;
+    top: 28px;
     right: 10px;
     visibility: hidden;
 }
